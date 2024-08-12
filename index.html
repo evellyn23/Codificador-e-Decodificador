@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador e Codificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+          <img src="logo-alura.svg" alt="Logo" class="logo">
+        </div>
+
+        <div class="titulo">
+          <h1 class="titulo">Escreva uma  mensagem secreta</h1>
+        </div>
+      </header>
+    <main class="container__principal">
+        <div class="conteudo">
+            <div class="container__input">
+                <textarea  id="input-texto" placeholder="Digite seu texto aqui..."></textarea>
+                <p class="validation-message"> Apenas letras minúsculas e sem acento!</p>
+            </div>
+            <div class="buttons">
+                <button class="botao" onclick="criptografar()" class="botao">Criptografar</button>
+                <button  class="botao" onclick="descriptografar()" class="botao">Descriptografar</button>
+                <button class="btn-copiar" id="copiar" onclick="copiar()" disabled>Copiar</button>
+            </div>
+            <div class="output">
+                <textarea id="output-texto" class="output-texto" readonly placeholder="O resultado aparecerá aqui"></textarea>        
+            </div>
+            <div id="mensagem-sucesso" class="mensagem-sucesso">Texto copiado!</div>
+        </div>
+
+        <div class="no-message-found-blue">
+            <img src="no-message-found-blue.svg" alt="Imagem Principal" >
+        </div>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Evellyh Maria</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
